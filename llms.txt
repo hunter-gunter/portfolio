@@ -1,0 +1,41 @@
+# Killian Frutieaux
+
+> Administrateur système et réseau Linux basé à Bordeaux (France), en poste chez Definima à Gradignan. Spécialités : virtualisation (Proxmox, vSphere), réseau et pare-feu (OPNsense, Stormshield), supervision (Zabbix), messagerie (Postfix), authentification (Keycloak / OpenID), sauvegarde et sécurité. Titulaire d'un Mastère Cybersécurité (RNCP niveau 7), certifié CEH et Stormshield CSNA.
+
+- Portfolio : https://hunter-gunter.github.io/portfolio/
+- LinkedIn : https://www.linkedin.com/in/killian-frutieaux/
+- GitHub : https://github.com/hunter-gunter
+
+## Expériences
+
+- 12/2025 – aujourd'hui · Administrateur système et réseau · Definima, Gradignan : administration de Proxmox, vSphere (OVH), OPNsense et Postfix ; développement d'outils internes ; mise à jour continue de l'infrastructure et suivi des failles de sécurité.
+- 10/2023 – 11/2025 · Administrateur système et réseau (alternance) · Definima, Gradignan : migration de vSphere OVH vers Proxmox ; refonte du réseau virtualisé et déploiement d'OPNsense ; supervision Zabbix ; refonte de la sauvegarde ; gestionnaire de mots de passe et serveur d'authentification OpenID ; migration de postes Windows vers Debian ; messagerie Postfix.
+- 09/2022 – 09/2023 · Cloud Infrastructure Services (alternance) · Capgemini, Pessac : administration des environnements systèmes et réseaux ; projet GreenIT sur Microsoft Exchange.
+- 09/2020 – 08/2022 · Technicien d'infrastructure (alternance) · OKTEO, Migennes : support et qualification des tickets ; déploiement de GLPI et FusionInventory sur Raspberry Pi ; maintenance à distance (Windows Server, IBM Notes, VPN, XiVO).
+
+## Formation
+
+- 2023 – 2025 · Mastère Cybersécurité, titre RNCP niveau 7 « Expert en informatique » · Sup de Vinci, Bordeaux
+- 2022 – 2023 · Bachelor SysOps, titre RNCP niveau 6 « Administrateur système, réseau et base de données » · EPSI, Bordeaux
+- 2020 – 2022 · BTS SIO option SISR · Pôle Formation 58-89, Auxerre
+- 2017 – 2020 · Bac Pro Systèmes numériques option RISC · Lycée professionnel Saint-Jacques, Joigny
+
+## Certifications
+
+- Certified Ethical Hacker (CEH) · EC-Council · valide de mars 2025 à mars 2028
+- Stormshield Network Administrator (CSNA) · Stormshield · valide de juin 2024 à juin 2027
+- TOEIC Listening & Reading, niveau B2 · ETS EMEA · valide de juin 2025 à juin 2027
+
+## Projets
+
+- Squoosh Desktop (2026, Rust, GPL-3.0) : portage natif de Squoosh pour Linux et Windows ; compression, comparaison et conversion d'images par lots (MozJPEG, OxiPNG, WebP, AVIF), hors ligne ; paquets .deb, AppImage, AUR et Windows ; 17 langues. https://github.com/hunter-gunter/squoosh-desktop
+- Black Box, fork (2025, Vala, GTK 4) : terminal Linux enrichi d'un gestionnaire de connexions SSH, de la division d'un onglet en 2 à 4 panneaux et de la diffusion de la saisie vers tous les panneaux. https://github.com/hunter-gunter/blackbox-terminal
+
+## Compétences
+
+- Systèmes : GNU/Linux (Debian, RHEL, Arch), Windows Server
+- Virtualisation et stockage : Proxmox, vSphere, TrueNAS, Docker
+- Réseau et sécurité : OPNsense, Stormshield, DNS, Nmap, Wireshark
+- Services : Postfix, Apache2 / Nginx, Keycloak, Active Directory, Microsoft Exchange, ferme RDS, WDS
+- Supervision et CI/CD : Zabbix, GitLab CI/CD
+- Langues : français (courant), anglais (B2)

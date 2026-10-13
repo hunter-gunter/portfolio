@@ -1,0 +1,5 @@
+# Le CV source contient des données personnelles : ne jamais le publier.
+*.pdf
+
+# Notes perso, non publiées.
+README.md

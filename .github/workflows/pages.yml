@@ -1,0 +1,57 @@
+name: Déploiement GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # historique complet, pour dater le sitemap
+
+      - name: Préparer le dossier publié
+        run: |
+          mkdir _site
+          cp -r index.html 404.html llms.txt sitemap.xml .nojekyll \
+                favicon.svg favicon-32.png apple-touch-icon.png og-image.png \
+                assets _site/
+
+      - name: Dater le sitemap avec le dernier commit du contenu
+        run: |
+          lastmod=$(git log -1 --format=%cs -- index.html assets llms.txt)
+          sed -i "s|<lastmod>[^<]*</lastmod>|<lastmod>${lastmod}</lastmod>|" _site/sitemap.xml
+          echo "lastmod : ${lastmod}"
+
+      - name: Vérifier le site
+        run: python3 .github/scripts/check_site.py _site
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
